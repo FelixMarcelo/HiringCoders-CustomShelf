@@ -32,7 +32,6 @@ const RecomendationsShelf = () => {
     return(
         <div className={`${handles.containerShelf}`}>
             {arrayProducts ? 
-                <div>
                 <SliderLayout 
                 itemsPerPage={{
                     desktop:3,
@@ -51,10 +50,9 @@ const RecomendationsShelf = () => {
                             price={product.items[0].sellers[0].commertialOffer.Price} 
                         />                       
                         
-                    ))}
+                    ))} 
                 </SliderLayout> 
-                    
-                </div>
+                
             : ''}
         </div>
     )
